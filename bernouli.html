@@ -1,0 +1,199 @@
+<html>
+<body style="background-color:lightyellow;">
+<style type="text/css">
+input{font-size:4vw;
+}
+button{background-color:lightgreen;
+	width:15vw;
+	height:10vw;
+	border: 5px outset lightgreen;
+	font-size:4vw;
+}
+.grid{display:grid;
+	 grid-template-columns:25vw 75vw;
+	 padding:3vw;
+	 font-size:4vw;
+	 }
+.leftnormal{float:right;
+	 padding:1vw;
+	 border: 1vw ;
+	 background-color:lightyellow;
+	 
+	 }
+.rightnormal{padding:1vw;
+	border: 1vw ;
+	background-color:lightyellow;
+	}
+.longbothsides{display:grid;
+	 grid-template-columns:2fr 2fr;
+	 padding:3vw;
+	 font-size:4vw;
+}
+.bottomgrid{display:grid;
+	 grid-template-columns:2fr 1fr 1fr 1fr;
+	 padding:4vw;
+	 position: fixed; 
+	 bottom:0;
+	 background-color:lightyellow;
+	 width:100vw;
+	 font-size:3vw;
+}
+</style>
+<div style="
+	 background-color: lightgreen;
+	 color: black;
+	 position: fixed;
+	 top: 1vw;
+	 left: 1vw;
+	 right: 1vw;
+	 border: 2vw outset lightgreen;
+	 height: 30vw;
+	 width:1fr;
+	 z-index: 100;
+	 font-size: 5vw;">
+	 <h3>Question</h3>
+	  Prove Bernoulli's principal<div style="position:fixed; right:10px;">
+	  <button onclick="subeqns()">subs</button></div>
+	  <script type="text/javascript">
+	  function subeqns(){
+	  alert("1)ΔW=(p₂-p₁)Δv\n2)ΔK.E=½m(v₂-v₁)²\n3)P.E=mg(h₂-h₁)\n4)m=ρΔv")
+	  }
+	  </script>
+	  </div></div>	  
+<div style="height:32vw;"> 
+</div>
+<div class="grid"> 
+      <div >
+          <input size="2" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="2" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="2" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="2" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="7"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="4" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="17"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="4" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="17"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="longbothsides"> 
+      <div >
+          <input size="13" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="13"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="longbothsides"> 	  
+	  <div >
+		  <input size="13" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input size="13"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="longbothsides">   
+	  <div >
+		  <input size="13" class="leftnormal"type="text">
+	  </div>
+	  <div >=
+		  <input size="13"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div class="grid"> 
+      <div >
+          <input size="4" class="leftnormal"type="text">
+      </div>
+	  <div >=
+		  <input size="17"class="rightnormal"type="text">	  
+	  </div>
+</div>
+<div style="height:38vw;"> 
+</div>
+<div class="bottomgrid">
+	<div >
+	  <button onclick="hint()">Steps</button>
+	  <script type="text/javascript">
+	  function hint(){
+	  alert("1)Δw=ΔK.E+ΔP.E & define each\n2)substitute &open bracket\n3)p₁v₁h₁=p₂v₂h₂ & m=ρΔv\n4)Δv cancel & =constand")
+	  }
+	  </script>
+	</div>
+	
+	  <div >
+		   <p ><div style="display:none"id=p1>&#178;</div></p> 
+		  <button onclick="copyToClipboard('p1')">x&#178;</button>
+	  </div>
+	  
+	  <div > 
+		  <p><div style="display:none" id=p2>&half;</div></p>
+		  <button onclick="copyToClipboard('p2')">&half;</button>
+	  </div>
+	  <div > 
+		  <p><div style="display:none" id=p3>&Delta;</div></p>
+		  <button onclick="copyToClipboard('p3')">&Delta;</button>
+	  </div>
+	  <div>P+&half;&rho;v&#8321;&#178+&rho;gh</div>
+	  <div > 
+		  <p><div style="display:none" id=p4>&rho;</div></p>
+		  <button onclick="copyToClipboard('p4')">&rho;</button>
+	  </div>
+	  <div > 
+	  <p><div style="display:none" id=p5>&#8321;</div></p>
+		  <button onclick="copyToClipboard('p5')">X&#8321;</button>
+	  </div>
+	  <div > 
+		  <p><div style="display:none" id=p6>&#x2082;</div></p>
+		  <button onclick="copyToClipboard('p6')">X&#8322;</button>
+	  </div>
+</div>  
+<script>
+  function copyToClipboard(var1){
+  let val = document.getElementById(var1).innerHTML;
+  const selBox = document.createElement('textarea');
+  selBox.style.position = 'fixed';
+  selBox.style.left = '0';
+  selBox.style.top = '0';
+  selBox.style.opacity = '0';
+  selBox.value = val;
+  document.body.appendChild(selBox);
+  selBox.focus();
+  selBox.select();
+  document.execCommand('copy');
+  document.body.removeChild(selBox);
+  }    
+</script>
